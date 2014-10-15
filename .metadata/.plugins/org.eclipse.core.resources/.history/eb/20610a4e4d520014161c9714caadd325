@@ -1,0 +1,5 @@
+
+public interface IMenuFormatter
+{
+	void enerateMenu(); //todo
+}

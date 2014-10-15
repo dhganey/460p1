@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+public class Main
+{
+	enum Country
+	{
+		GB, USA;
+	}
+	
+	enum Format
+	{
+		HTML, XML, TXT;
+	}
+	
+	final static String GREAT_BRITAIN = "GB";
+	final static String UNITED_STATES = "USA";
+	final static String HTML = "HTML";
+	final static String XML = "XML";
+	final static String TXT = "TXT";
+	
+	public static void main(String[] args)
+	{
+		Scanner scan = new Scanner(System.in); //take input from console
+		String input;
+		Country selectedCountry = null;
+		Format selectedFormat = null;
+		
+		System.out.println("Hello and welcome!");
+		System.out.println("Please select your country (GB or USA):");
+	
+		do
+		{
+			input = scan.next();
+			if (input.equalsIgnoreCase(GREAT_BRITAIN))
+			{
+				selectedCountry = Country.GB;
+			}
+			else if (input.equalsIgnoreCase(UNITED_STATES))
+			{
+				selectedCountry = Country.USA;
+			}
+			else
+			{
+				System.out.println("Please enter your country again (GB or USA):");
+			}
+		} while (selectedCountry == null);
+		
+		System.out.println("Please select your restaurant type (BLAH");
+		//TODO
+		
+		System.out.println("Please select your menu format (HTML, XML, or TXT):");
+		do
+		{
+			input = scan.next();
+			if (input.equalsIgnoreCase(HTML))
+			{
+				selectedFormat = Format.HTML;
+			}
+			else if (input.equalsIgnoreCase(XML))
+			{
+				selectedFormat = Format.XML;
+			}
+			else if (input.equalsIgnoreCase(TXT))
+			{
+				selectedFormat = Format.TXT;
+			}
+			else
+			{
+				System.out.println("Please enter your format again (HTML, XML, or TXT):");
+			}
+		} while (selectedFormat == null);
+	}
+}
