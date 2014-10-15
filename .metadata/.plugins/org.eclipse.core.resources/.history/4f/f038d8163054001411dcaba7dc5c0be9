@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 /**
  * Driver class. Requests user input, then triggers menu generation
- * @author David Ganey
+ * @author David
+
  */
 public class Main implements Definitions
 {

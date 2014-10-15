@@ -1,12 +1,35 @@
 package creationalPatterns;
 import java.util.Scanner;
 
-/**
- * Driver class. Requests user input, then triggers menu generation
- * @author David Ganey
- */
-public class Main implements Definitions
+public class Main
 {
+	public enum Country
+	{
+		GB, USA;
+	}
+	
+	public enum Restaurant
+	{
+		DINER, EVENING_ONLY, ALL_DAY;
+	}
+	
+	public enum Format
+	{
+		HTML, XML, TXT;
+	}
+	
+	public final static String 	GREAT_BRITAIN = "GB",
+								UNITED_STATES = "USA",
+								DINER = "Diner",
+								EVENING = "Evening",
+								ALL_DAY = "All day"
+								,HTML = "HTML",
+								XML = "XML",
+								TXT = "TXT",
+								COUNTRY_OPTIONS = "(GB or USA)",
+								RESTAURANT_OPTIONS = "(diner, evening, or all day)",
+								FORMAT_OPTIONS = "(HTML, XML, or TXT)";
+	
 	public static void main(String[] args)
 	{
 		Scanner scan = new Scanner(System.in);
