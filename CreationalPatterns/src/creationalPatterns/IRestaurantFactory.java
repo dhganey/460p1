@@ -1,6 +1,6 @@
 package creationalPatterns;
 
-public interface IRestaurant
+public interface IRestaurantFactory
 {
 	void createReader();
 	
