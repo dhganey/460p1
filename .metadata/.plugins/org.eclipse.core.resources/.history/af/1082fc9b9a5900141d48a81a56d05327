@@ -1,6 +1,0 @@
-package creationalPatterns;
-
-public class XMLReader implements IReader
-{
-
-}
