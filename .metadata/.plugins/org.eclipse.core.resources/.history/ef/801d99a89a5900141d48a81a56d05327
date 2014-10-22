@@ -1,0 +1,10 @@
+package creationalPatterns;
+
+public class XMLReader implements IReader
+{
+	@Override
+	public IReader getReader(Format f) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

@@ -1,0 +1,9 @@
+package creationalPatterns;
+
+public interface IReader
+{
+	public static FileReader getReader(Country c) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

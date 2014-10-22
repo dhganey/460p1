@@ -1,0 +1,21 @@
+package creationalPatterns;
+
+public class MenuItem
+{
+	private Country country;
+	private int id;
+	private String name;
+	private String description;
+	private FoodCategory category;
+	private double price;
+	
+	public MenuItem(String country, int id, String name, String description, String category, double price)
+	{
+		this.country = Country.valueOf(country);
+		this.id = id;
+		this.name = name;
+		this.description = description;
+		this.category = (FoodCategory)category;
+		this.price = price;
+	}
+}

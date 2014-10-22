@@ -1,0 +1,9 @@
+package creationalPatterns;
+
+public class ReaderFactory implements IReader
+{
+	public IReader getReader(Format f)
+	{
+		if ()
+	}
+}

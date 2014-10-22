@@ -9,26 +9,19 @@ public class Main implements Definitions
 {
 	public static void main(String[] args)
 	{
+		//Take input from user
 		Scanner scan = new Scanner(System.in);
-		IReader reader;
-		IMenuGenerator generator;
-		IMenuFormatter formatter;
 		
 		Country selectedCountry = getUserCountry(scan);
-		Restaurant selectedRestaurant = getUserRestaurant(scan);
+		RestaurantType selectedRestaurant = getUserRestaurant(scan);
 		Format selectedFormat = getUserFormat(scan);
 		
-		if (selectedCountry == Country.GB)
-		{
-			reader = new XMLReader();
-		}
-		else
-		{
-			reader = new JSONReader();
-		}
+		//Now use factory method to get some type of file reader
+		//Client (main) does not care about reader type, just wants a reader
+		ReaderFactory rf = new ReaderFactory();
+		FileReader myReader = rf.getReader(selectedCountry);
 		
-		//todo: this part makes no sense
-		reader.getReader();
+		Menu menu = myReader.Read();
 	}
 	
 	/**
@@ -50,9 +43,9 @@ public class Main implements Definitions
 			{
 				selectedCountry = Country.GB;
 			}
-			else if (input.equalsIgnoreCase(UNITED_STATES))
+			else if (input.equalsIgnoreCase(UNITED_STATES) || (input.equalsIgnoreCase(UNITED_STATES2)))
 			{
-				selectedCountry = Country.USA;
+				selectedCountry = Country.US;
 			}
 			else
 			{
@@ -68,10 +61,10 @@ public class Main implements Definitions
 	 * @param scan System.in Scanner object
 	 * @return Restaurant enum
 	 */
-	private static Restaurant getUserRestaurant(Scanner scan)
+	private static RestaurantType getUserRestaurant(Scanner scan)
 	{
 		String input;
-		Restaurant selectedRestaurant = null;
+		RestaurantType selectedRestaurant = null;
 		
 		System.out.println("Please select your restaurant " + RESTAURANT_OPTIONS + ": ");
 		
@@ -80,15 +73,15 @@ public class Main implements Definitions
 			input = scan.next();
 			if (input.equalsIgnoreCase(DINER))
 			{
-				selectedRestaurant = Restaurant.DINER;
+				selectedRestaurant = RestaurantType.DINER;
 			}
 			else if (input.contains(EVENING))
 			{
-				selectedRestaurant = Restaurant.EVENING_ONLY;
+				selectedRestaurant = RestaurantType.EVENING_ONLY;
 			}
 			else if (input.equalsIgnoreCase(ALL_DAY))
 			{
-				selectedRestaurant = Restaurant.DINER;
+				selectedRestaurant = RestaurantType.DINER;
 			}
 			else
 			{

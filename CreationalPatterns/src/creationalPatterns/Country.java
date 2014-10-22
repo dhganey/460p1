@@ -1,6 +1,6 @@
 package creationalPatterns;
 
-enum Country
+public enum Country
 {
-	GB, USA;
+	GB, US, IN;
 }

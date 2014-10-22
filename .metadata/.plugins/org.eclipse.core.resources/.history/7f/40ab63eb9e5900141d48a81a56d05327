@@ -1,0 +1,9 @@
+package creationalPatterns;
+
+public class XMLReader extends FileReader
+{
+	public Menu Read()
+	{
+		
+	}
+}

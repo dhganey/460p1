@@ -1,0 +1,7 @@
+package creationalPatterns;
+
+
+public class JSONReader
+{
+	
+}

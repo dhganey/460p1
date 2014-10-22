@@ -1,0 +1,9 @@
+package creationalPatterns;
+
+public class FileReader
+{
+	public Menu read()
+	{
+		//no implementation in parent
+	}
+}

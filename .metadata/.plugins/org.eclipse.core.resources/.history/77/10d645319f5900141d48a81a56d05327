@@ -1,0 +1,14 @@
+package creationalPatterns;
+
+public class XMLReader extends FileReader
+{
+	public Menu Read()
+	{
+		Menu menu = new Menu();
+		
+		try
+		{
+			File fXmlFile = new File("FoodItemData.xml");
+		}
+	}
+}

@@ -1,0 +1,6 @@
+package creationalPatterns;
+
+public interface IReader
+{
+	IReader getReader(Format f);
+}

@@ -1,0 +1,16 @@
+package creationalPatterns;
+
+public interface Definitions
+{
+	public final static String 	GREAT_BRITAIN = "GB",
+			UNITED_STATES = "USA",
+			DINER = "Diner",
+			EVENING = "Evening",
+			ALL_DAY = "All day"
+			,HTML = "HTML",
+			XML = "XML",
+			TXT = "TXT",
+			COUNTRY_OPTIONS = "(GB or USA)",
+			RESTAURANT_OPTIONS = "(diner, evening, or all day)",
+			FORMAT_OPTIONS = "(HTML, XML, or TXT)";
+}

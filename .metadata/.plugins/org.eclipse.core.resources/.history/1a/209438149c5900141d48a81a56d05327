@@ -1,0 +1,11 @@
+package creationalPatterns;
+
+/**
+ * Represents the valid country types
+ * @author David
+ *
+ */
+enum Country
+{
+	GB, USA;
+}

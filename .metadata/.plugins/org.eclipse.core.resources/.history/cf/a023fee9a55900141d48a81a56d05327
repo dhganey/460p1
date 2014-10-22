@@ -1,0 +1,12 @@
+import org.json.simple.JSONObject;
+
+
+package creationalPatterns;
+
+public class JSONReader extends FileReader
+{
+	public Menu Read()
+	{
+		
+	}
+}

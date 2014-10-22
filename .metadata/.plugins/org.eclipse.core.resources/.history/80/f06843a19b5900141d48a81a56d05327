@@ -1,0 +1,17 @@
+package creationalPatterns;
+
+
+public class JSONReader
+{
+	@Override
+	public IReader getReader(Format f) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public Menu read() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

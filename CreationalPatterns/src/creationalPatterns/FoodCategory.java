@@ -1,0 +1,6 @@
+package creationalPatterns;
+
+public enum FoodCategory
+{
+	Breakfast, Snack, Appetizer, Lunch, Dinner, Dessert, Side;
+}

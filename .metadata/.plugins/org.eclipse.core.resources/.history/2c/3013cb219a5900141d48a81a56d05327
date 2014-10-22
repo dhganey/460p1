@@ -1,0 +1,11 @@
+package creationalPatterns;
+
+public class MenuItem
+{
+	private Country country;
+	int id;
+	String name;
+	String description;
+	FoodCategory category;
+	double price;
+}

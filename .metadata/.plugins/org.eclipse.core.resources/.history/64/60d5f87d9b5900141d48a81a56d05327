@@ -1,0 +1,8 @@
+package creationalPatterns;
+
+public interface IReader
+{
+	public 
+	
+	public Menu read();
+}
