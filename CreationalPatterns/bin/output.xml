@@ -1,0 +1,124 @@
+<MenuItems>
+    <FoodItemCategory category="Breakfast">
+        <MenuItem>
+            <Name>Biscuits and Gravy</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>10.95</Amount>
+            </Price>
+            <Description>This is a hearty breakfast favorite. Biscuits served with hot sausage gravy </Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>The All American Breakfast</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>9.95</Amount>
+            </Price>
+            <Description>Two fried eggs, Sausage (patty or link), crispy bacon, pancakes and maple syrup </Description>
+        </MenuItem>
+    </FoodItemCategory>
+    <FoodItemCategory category="Snack">
+        <MenuItem>
+            <Name>Pork Rinds</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>1.95</Amount>
+            </Price>
+            <Description>Salted and roasted pork fat and skin.</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Bacon Wrapped Hot Dog</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>4.95</Amount>
+            </Price>
+            <Description>Take one hot dog, wrap it in bacon and cook until the bacon is nice and crisp.  Then place it in the bun.</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Grilled Cheese and Ham</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>4.95</Amount>
+            </Price>
+            <Description>Sliced ham, American cheese between two slices of White bread buttered on the outside and then fried.</Description>
+        </MenuItem>
+    </FoodItemCategory>
+    <FoodItemCategory category="Appetizer">
+        <MenuItem>
+            <Name>Glazed Doughnut</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>0.95</Amount>
+            </Price>
+            <Description>Deep fried pastry covered in sugar glaze.</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Jelly Doughnut</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>0.95</Amount>
+            </Price>
+            <Description>Deep fried pastry covered in sugar, and filled with strawberry jelly.</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Hushpuppies</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>4.95</Amount>
+            </Price>
+            <Description>Cornbread dough deep fired served with a variety of dipping sauces.</Description>
+        </MenuItem>
+    </FoodItemCategory>
+    <FoodItemCategory category="Lunch">
+        <MenuItem>
+            <Name>Hamburger</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>11.95</Amount>
+            </Price>
+            <Description>Despite the name, ground beef cooked over a charcoal grill with a side of French Fries.</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Cheeseburger</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>12.95</Amount>
+            </Price>
+            <Description>Same as the Hamburger with a side of cheddar cheese added.</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Meatloaf and Mashed Potatoes</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>18.95</Amount>
+            </Price>
+            <Description>Meatloaf, Mashed Potatoes, Brown gravy and Broccoli.</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Jambalaya</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>14.95</Amount>
+            </Price>
+            <Description>Creole style Jambalaya, with chicken, andouille sausage, tomatoes, onions, crawfish and rice.  Good enough to have you Fais-do-do-ing</Description>
+        </MenuItem>
+    </FoodItemCategory>
+    <FoodItemCategory category="Dessert">
+        <MenuItem>
+            <Name>Pazooki</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>7.95</Amount>
+            </Price>
+            <Description>A large 6 inch round chocolate chip cookie, served warm with 3 large scoops of vanilla ice cream.</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Banana Split</Name>
+            <Price>
+                <CurrencyCode>USD</CurrencyCode>
+                <Amount>7.95</Amount>
+            </Price>
+            <Description>One banana cut lengthwise served with scoops of vanilla, chocolate and strawberry ice cream and topped with Pineapple, chocolate and strawberry syrup.</Description>
+        </MenuItem>
+    </FoodItemCategory>
+</MenuItems>

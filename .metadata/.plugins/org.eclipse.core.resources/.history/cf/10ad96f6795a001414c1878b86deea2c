@@ -1,0 +1,9 @@
+package creationalPatterns;
+
+public class MenuFormatter
+{
+	public void format(Menu m) //no implementation at parent
+	{
+		
+	}
+}

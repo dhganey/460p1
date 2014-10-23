@@ -1,0 +1,10 @@
+package creationalPatterns;
+
+public class MenuFormatter
+{
+	private Format f;
+	public MenuFormatter(Format f)
+	{
+		this.f = f;
+	}
+}

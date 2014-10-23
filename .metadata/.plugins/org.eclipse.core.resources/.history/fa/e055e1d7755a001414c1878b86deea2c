@@ -1,0 +1,9 @@
+package creationalPatterns;
+
+public class MenuFormatter
+{
+	public MenuFormatter(Format f)
+	{
+		
+	}
+}

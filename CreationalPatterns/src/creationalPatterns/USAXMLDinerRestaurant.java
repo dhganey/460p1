@@ -1,6 +1,6 @@
 package creationalPatterns;
 
-public class USAXMLDinerRestaurant extends Restaurant
+public class USAXMLDinerRestaurant extends Restaurant implements IReader, IMenuGenerator, IMenuFormatter
 {
 	public USAXMLDinerRestaurant()
 	{
@@ -17,5 +17,11 @@ public class USAXMLDinerRestaurant extends Restaurant
 	{
 		generator = new MenuGenerator(Country.US, RestaurantType.DINER);
 		return generator;
+	}
+
+	public MenuFormatter getMenuFormatter()
+	{
+		formatter = new XMLMenuFormatter();
+		return formatter;
 	}
 }

@@ -28,4 +28,9 @@ public class Menu
 	{
 		return menuItems.get(i);
 	}
+	
+	public ArrayList<MenuItem> getMenuItemList()
+	{
+		return menuItems;
+	}
 }

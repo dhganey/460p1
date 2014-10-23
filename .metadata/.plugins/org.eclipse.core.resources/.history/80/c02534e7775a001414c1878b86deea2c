@@ -1,0 +1,57 @@
+package creationalPatterns;
+
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class XMLMenuFormatter extends MenuFormatter implements Definitions
+{
+
+	public XMLMenuFormatter()
+	{
+		//nothing
+	}
+
+	public void format(Menu m)
+	{
+		//First, sort the Menu by category since that's how XML does the output
+		List<MenuItem> menuItems = m.getMenuItemList();
+		Collections.sort(menuItems, new Comparator<MenuItem>()
+				@Override
+				{
+					public int compare(MenuItem m1, MenuItem m2)
+					{
+						return m1.getCategory().ordinal().compareTo(m1.getCategory().ordinal());
+					}
+				}
+		
+		Writer writer = null;
+		try
+		{
+			writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("filename.txt"), "utf-8"));
+			writer.write("<MenuItems>\n");
+			for (int i = 0; i < m.size(); i++)
+			{
+				MenuItem cur = m.get(i);
+				
+			}
+		}
+		catch (UnsupportedEncodingException | FileNotFoundException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

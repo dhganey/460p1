@@ -44,4 +44,19 @@ public class MenuItem implements Definitions
 	{
 		return category;
 	}
+	
+	public String getName()
+	{
+		return this.name;
+	}
+	
+	public double getPrice()
+	{
+		return this.price;
+	}
+	
+	public String getDescription()
+	{
+		return this.description;
+	}
 }

@@ -27,5 +27,8 @@ public interface Definitions
 			DESCRIPTION = "description",
 			CATEGORY = "category",
 			PRICE = "price",
-			RADIO_ERROR_TEXT = "Please ensure one button from each category is selected";
+			RADIO_ERROR_TEXT = "Please ensure one button from each category is selected",
+			XML_OUT = "output.xml",
+			TXT_OUT = "output.txt",
+			HTML_OUT = "output.html";
 }

@@ -1,0 +1,37 @@
+package creationalPatterns;
+
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.io.Writer;
+
+public class XMLMenuFormatter extends MenuFormatter implements Definitions
+{
+
+	public XMLMenuFormatter()
+	{
+		//nothing
+	}
+
+	public void format(Menu m)
+	{
+		Writer writer = null;
+		try
+		{
+			writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("filename.txt"), "utf-8"));
+			writer.write("<MenuItems>\n");
+			for (int i = 0; i < m.size(); i++)
+			{
+				MenuItem cur = m.get(i);
+				
+			}
+		}
+		catch (UnsupportedEncodingException | FileNotFoundException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

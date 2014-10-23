@@ -1,0 +1,16 @@
+package creationalPatterns;
+
+public class XMLMenuFormatter extends MenuFormatter
+{
+
+	public XMLMenuFormatter()
+	{
+		//nothing
+	}
+
+	public void format(Menu m)
+	{
+		Writer writer = null;
+		writer = new BufferedReader(new OutputStreamWriter(new FileOutputStream("output.xml")));
+	}
+}

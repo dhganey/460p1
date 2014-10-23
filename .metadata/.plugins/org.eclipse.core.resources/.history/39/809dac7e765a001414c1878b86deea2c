@@ -1,0 +1,15 @@
+package creationalPatterns;
+
+public class XMLMenuFormatter extends MenuFormatter
+{
+
+	public XMLMenuFormatter()
+	{
+		
+	}
+
+	public void format(Menu m)
+	{
+		
+	}
+}

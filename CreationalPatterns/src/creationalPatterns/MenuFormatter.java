@@ -1,12 +1,9 @@
 package creationalPatterns;
 
-public class MenuFormatter implements IMenuFormatter
+public class MenuFormatter
 {
-
-	@Override
-	public void generateMenu() {
-		// TODO Auto-generated method stub
-		
+	public String format(Menu m) //no implementation at parent
+	{
+		return "";
 	}
-
 }
