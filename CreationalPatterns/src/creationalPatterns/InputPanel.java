@@ -1,5 +1,6 @@
 package creationalPatterns;
 
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -18,17 +19,19 @@ public class InputPanel extends JPanel
 	private JRadioButton GBButton;
 	private JRadioButton USAButton;
 	
-	private ButtonGroup outputButtons;
+	private ButtonGroup formatButtons;
 	private JRadioButton XMLButton;
 	private JRadioButton HTMLButton;
 	private JRadioButton TXTButton;
-	
+
 	private ButtonGroup typeButtons;
 	private JRadioButton dinerButton;
 	private JRadioButton allDayButton;
 	private JRadioButton eveningOnlyButton;
 	
 	private JButton submitButton;
+			
+	private JLabel status;
 	
 	/**
 	 * Member variables
@@ -45,8 +48,8 @@ public class InputPanel extends JPanel
 		countryButtons = new ButtonGroup();
 		GBButton = new JRadioButton();
 		USAButton = new JRadioButton();
-		
-		outputButtons = new ButtonGroup();
+
+		formatButtons = new ButtonGroup();
 		XMLButton = new JRadioButton();
 		HTMLButton = new JRadioButton();
 		TXTButton = new JRadioButton();
@@ -56,7 +59,20 @@ public class InputPanel extends JPanel
 		allDayButton = new JRadioButton();
 		eveningOnlyButton = new JRadioButton();
 		
+		countryButtons.add(GBButton);
+		countryButtons.add(USAButton);
+		
+		formatButtons.add(XMLButton);
+		formatButtons.add(HTMLButton);
+		formatButtons.add(TXTButton);
+		
+		typeButtons.add(dinerButton);
+		typeButtons.add(allDayButton);
+		typeButtons.add(eveningOnlyButton);
+		
 		submitButton = new JButton();
+			
+		status = new JLabel("Status:\n");
 		
 		GBButton.setText("Great Britain");
 		USAButton.setText("United States");
@@ -68,28 +84,24 @@ public class InputPanel extends JPanel
 		eveningOnlyButton.setText("Evening Only");
 		submitButton.setText("Submit");
 		
-		countryButtons.add(GBButton);
-		countryButtons.add(USAButton);
-		
-		outputButtons.add(XMLButton);
-		outputButtons.add(HTMLButton);
-		outputButtons.add(TXTButton);
-		
-		typeButtons.add(dinerButton);
-		typeButtons.add(allDayButton);
-		typeButtons.add(eveningOnlyButton);
-		
 		ButtonListener listener = new ButtonListener();
 		submitButton.addActionListener(listener);
+				
+		this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 		
 		this.add(GBButton);
 		this.add(USAButton);
+		this.add(new JSeparator(SwingConstants.HORIZONTAL));
 		this.add(XMLButton);
 		this.add(HTMLButton);
 		this.add(TXTButton);
+		this.add(new JSeparator(SwingConstants.HORIZONTAL));
 		this.add(dinerButton);
 		this.add(allDayButton);
 		this.add(eveningOnlyButton);
+		this.add(new JSeparator(SwingConstants.HORIZONTAL));
+		this.add(status);
+		this.add(new JSeparator(SwingConstants.HORIZONTAL));
 		this.add(submitButton);
 	}
 	
@@ -97,11 +109,13 @@ public class InputPanel extends JPanel
 	 * Takes action when submit is pressed
 	 * @author David
 	 */
-	private class ButtonListener implements ActionListener
+	private class ButtonListener implements ActionListener, Definitions
 	{
 		public void actionPerformed(ActionEvent e)
 		{	
 			System.out.println("Submit pressed");
+			status.setText("");
+			boolean ready = true;
 			
 			//when the user hits Submit, first grab the input and set the members:
 			if (GBButton.isSelected())
@@ -114,7 +128,8 @@ public class InputPanel extends JPanel
 			}
 			else
 			{
-				//TODO fail
+				status.setText(RADIO_ERROR_TEXT);
+				ready = false;
 			}
 			
 			if (XMLButton.isSelected())
@@ -131,7 +146,8 @@ public class InputPanel extends JPanel
 			}
 			else
 			{
-				//TODO fail
+				status.setText(RADIO_ERROR_TEXT);
+				ready = false;
 			}
 			
 			if (dinerButton.isSelected())
@@ -148,20 +164,25 @@ public class InputPanel extends JPanel
 			}
 			else
 			{
-				//TODO fail
-				System.out.println("Radio button failure");
+				status.setText(RADIO_ERROR_TEXT);
+				ready = false;
 			}
 			
-			//next, create the relevant restaurant
-			//again, using an interface means we don't have to care about the specific type of restaurant
-			Restaurant myRestaurant = RestaurantFactory.createRestaurant(country, format, type);
-			System.out.println("Restaurant created");
-			
-			//TODO: figure out if these return anything
-			myRestaurant.createReader();
-			myRestaurant.createMenuGenerator();
-			myRestaurant.createMenuFormatter();
+			if (ready) //user has selected an appropriate combination of buttons
+			{
+				//if ready, create the relevant restaurant
+				//again, using an interface means we don't have to care about the specific type of restaurant
+				Restaurant myRestaurant = RestaurantFactory.getRestaurantInstance(country, format, type);
+				status.setText(status.getText() + "Restaurant created");
+				
+				FileReader myReader = myRestaurant.getReader();
+				myRestaurant.setMenu(myReader.Read());
+				int stop = 4;
+				
+				MenuGenerator myGenerator = myRestaurant.getMenuGenerator();
+				//TODO
+			}
+			//else nothing, wait for user to try again
 		}
-		
 	}
 }

@@ -26,5 +26,6 @@ public interface Definitions
 			NAME = "name",
 			DESCRIPTION = "description",
 			CATEGORY = "category",
-			PRICE = "price";
+			PRICE = "price",
+			RADIO_ERROR_TEXT = "Please ensure one button from each category is selected";
 }

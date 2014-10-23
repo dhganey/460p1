@@ -2,9 +2,9 @@ package creationalPatterns;
 
 public interface IRestaurant
 {
-	void createReader();
+	public FileReader getReader();
 	
-	void createMenuGenerator();
+	public MenuGenerator getMenuGenerator();
 	
-	void createMenuFormatter();
+	public MenuFormatter getMenuFormatter();
 }

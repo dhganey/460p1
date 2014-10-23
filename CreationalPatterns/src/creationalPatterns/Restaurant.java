@@ -2,25 +2,33 @@ package creationalPatterns;
 
 public class Restaurant implements IRestaurant
 {
-	private Menu menu;
+	protected Menu menu;
+	protected FileReader reader;
+	protected MenuGenerator generator;
+	protected MenuFormatter formatter;
 	
 	public Restaurant()
 	{
 		//no implementation in parent class
 	}
 
-	public void createReader()
+	public FileReader getReader()
 	{
-		
+		return reader;
 	}
 
-	public void createMenuGenerator()
+	public MenuGenerator getMenuGenerator()
 	{
-		
+		return generator;
 	}
 
-	public void createMenuFormatter()
+	public MenuFormatter getMenuFormatter()
 	{
-		
+		return formatter;
+	}
+	
+	public void setMenu(Menu menu)
+	{
+		this.menu = menu;
 	}
 }

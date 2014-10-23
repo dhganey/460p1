@@ -8,8 +8,9 @@ public class RestaurantFactory
 	private static String[][][] typeArray = new String[2][3][3];
 	private static Restaurant retVal;
 	
-	public static Restaurant createRestaurant(Country c, Format f, RestaurantType t)
+	public static Restaurant getRestaurantInstance(Country c, Format f, RestaurantType t)
 	{
+		//prepare an array of all possible class names
 		typeArray[0][0][0] = "GBHTMLDinerRestaurant";
 		typeArray[0][0][1] = "GBHTMLEveningOnlyRestaurant";
 		typeArray[0][0][2] = "GBHTMLAllDayRestaurant";
@@ -33,6 +34,7 @@ public class RestaurantFactory
 		//inspired by http://stackoverflow.com/questions/9886266/is-there-a-way-to-instantiate-a-class-by-name-in-java
 		try
 		{
+			//get the class name and instantiate it
 			String className = "creationalPatterns." + typeArray[c.ordinal()][f.ordinal()][t.ordinal()]; //append package name
 			Class<?> classType = Class.forName(className);
 			Constructor<?> constructor = classType.getConstructor();

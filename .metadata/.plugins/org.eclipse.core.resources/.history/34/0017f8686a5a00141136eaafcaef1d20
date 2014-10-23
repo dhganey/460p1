@@ -1,0 +1,29 @@
+package creationalPatterns;
+
+public class Restaurant implements IRestaurant
+{
+	private Menu menu;
+	private FileReader reader;
+	private MenuGenerator generator;
+	private MenuFormatter formatter;
+	
+	public Restaurant()
+	{
+		//no implementation in parent class
+	}
+
+	public void getReader()
+	{
+		//nothing
+	}
+
+	public void getMenuGenerator()
+	{
+		//nothing
+	}
+
+	public void getMenuFormatter()
+	{
+		//nothing
+	}
+}

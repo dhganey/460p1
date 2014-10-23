@@ -1,0 +1,10 @@
+package creationalPatterns;
+
+public class GBXMLDinerRestaurant extends Restaurant
+{
+	public GBXMLDinerRestaurant()
+	{
+		reader = new XMLReader();
+		return reader;
+	}
+}

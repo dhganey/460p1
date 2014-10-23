@@ -13,6 +13,6 @@ public class Main extends JApplet implements Definitions
 	{
 		InputPanel ip = new InputPanel();
 		this.getContentPane().add(ip);
-		this.setSize(800, 50);
+		this.setSize(350, 300);
 	}
 }
