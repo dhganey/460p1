@@ -2,5 +2,5 @@ package creationalPatterns;
 
 public interface IMenuGenerator
 {
-	void getMenu(); //todo
+	public MenuGenerator getMenuGenerator();
 }

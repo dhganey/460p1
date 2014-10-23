@@ -12,7 +12,7 @@ public class XMLReader extends FileReader implements Definitions
 {
 	private final static int nodeOffset = 0;
 	
-	public Menu Read()
+	public Menu read()
 	{
 		Menu menu = new Menu();
 		

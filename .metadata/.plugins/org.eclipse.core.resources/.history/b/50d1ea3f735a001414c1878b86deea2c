@@ -1,0 +1,18 @@
+package creationalPatterns;
+
+public class MenuGenerator
+{
+	private Country c;
+	private RestaurantType t;
+	
+	public MenuGenerator(Country c, RestaurantType t)
+	{
+		this.c = c;
+		this.t = t;
+	}
+	
+	public generate()
+	{
+		ArrayList<FoodCategory> categories = new ArrayList<FoodCategory>();
+	}
+}

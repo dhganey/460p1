@@ -1,16 +1,6 @@
 package creationalPatterns;
 
-public abstract class IReader
+public interface IReader
 {
-	public static FileReader getReader(Country c)
-	{
-		if (c == Country.GB)
-		{
-			return new XMLReader();
-		}
-		else
-		{
-			return new JSONReader();
-		}
-	}
+	public FileReader getReader();
 }

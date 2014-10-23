@@ -176,11 +176,13 @@ public class InputPanel extends JPanel
 				status.setText(status.getText() + "Restaurant created");
 				
 				FileReader myReader = myRestaurant.getReader();
-				myRestaurant.setMenu(myReader.Read());
-				int stop = 4;
+				myRestaurant.setMenu(myReader.read());
+				int stop1 = 2;
 				
 				MenuGenerator myGenerator = myRestaurant.getMenuGenerator();
-				//TODO
+				myRestaurant.setMenu(myGenerator.generate(myRestaurant.getMenu()));
+				int stop = 4;
+
 			}
 			//else nothing, wait for user to try again
 		}

@@ -34,4 +34,14 @@ public class MenuItem implements Definitions
 		}
 		this.price = price;
 	}
+	
+	public Country getCountry()
+	{
+		return country;
+	}
+	
+	public FoodCategory getCategory()
+	{
+		return category;
+	}
 }

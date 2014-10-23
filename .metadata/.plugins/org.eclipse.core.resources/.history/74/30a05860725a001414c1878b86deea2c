@@ -1,0 +1,6 @@
+package creationalPatterns;
+
+public interfaceIReader
+{
+	public FileReader getReader();
+}

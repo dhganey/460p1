@@ -1,0 +1,12 @@
+package creationalPatterns;
+
+public class MenuGenerator
+{
+
+	@Override
+	public MenuGenerator getMenu() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,22 @@
+package creationalPatterns;
+
+public class GBXMLDinerRestaurant extends Restaurant implements IReader, IMenuGenerator
+{
+	public GBXMLDinerRestaurant()
+	{
+		//TODO
+	}
+	
+	public FileReader getReader()
+	{
+		reader = new XMLReader();
+		return reader;
+	}
+
+	public MenuGenerator getMenu()
+	{
+		generator = new MenuGenerator(Country.GB, RestaurantType.DINER);
+	}
+	
+
+}

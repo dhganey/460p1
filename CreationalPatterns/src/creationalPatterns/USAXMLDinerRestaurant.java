@@ -13,5 +13,9 @@ public class USAXMLDinerRestaurant extends Restaurant
 		return reader;
 	}
 	
-	//TODO two more get methods
+	public MenuGenerator getMenuGenerator()
+	{
+		generator = new MenuGenerator(Country.US, RestaurantType.DINER);
+		return generator;
+	}
 }

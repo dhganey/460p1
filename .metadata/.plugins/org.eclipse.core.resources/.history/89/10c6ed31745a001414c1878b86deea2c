@@ -1,0 +1,54 @@
+package creationalPatterns;
+
+import java.util.ArrayList;
+
+public class MenuGenerator
+{
+	private Country c;
+	private RestaurantType t;
+	
+	public MenuGenerator(Country c, RestaurantType t)
+	{
+		this.c = c;
+		this.t = t;
+	}
+	
+	public Menu generate(Menu m)
+	{
+		Menu newMenu = new Menu();
+		
+		ArrayList<FoodCategory> categories = new ArrayList<FoodCategory>();
+		categories.add(FoodCategory.Dessert); //everyone has dessert
+		if (t == RestaurantType.DINER)
+		{
+			categories.add(FoodCategory.Breakfast);
+			categories.add(FoodCategory.Lunch);
+			categories.add(FoodCategory.Snack);
+			categories.add(FoodCategory.Appetizer);
+		}
+		else if (t == RestaurantType.EVENING_ONLY)
+		{
+			categories.add(FoodCategory.Dinner);
+			categories.add(FoodCategory.Side);
+			categories.add(FoodCategory.Appetizer);
+		}
+		else if (t == RestaurantType.ALL_DAY)
+		{
+			categories.add(FoodCategory.Breakfast);
+			categories.add(FoodCategory.Lunch);
+			categories.add(FoodCategory.Snack);
+			categories.add(FoodCategory.Side);
+			categories.add(FoodCategory.Appetizer);
+			categories.add(FoodCategory.Dinner);
+		}
+		
+		for (int i = 0; i < m.size(); i++)
+		{
+			MenuItem cur = m.get(i);
+			if (cur.getCountry() != c)
+			{
+				continue
+			}
+		}
+	}
+}

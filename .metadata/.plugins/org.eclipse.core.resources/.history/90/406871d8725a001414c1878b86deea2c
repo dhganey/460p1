@@ -1,0 +1,12 @@
+package creationalPatterns;
+
+public class MenuGenerator
+{
+	private Country c;
+	private RestaurantType t;
+	
+	public MenuGenerator(Country c, RestaurantType t)
+	{
+		
+	}
+}

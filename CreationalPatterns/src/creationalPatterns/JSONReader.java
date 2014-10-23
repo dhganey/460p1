@@ -17,7 +17,7 @@ import org.json.simple.parser.JSONParser;
 
 public class JSONReader extends FileReader implements Definitions
 {
-	public Menu Read()
+	public Menu read()
 	{
 		Menu menu = new Menu();
 		

@@ -18,4 +18,14 @@ public class Menu
 	{
 		this.menuItems.add(m);
 	}
+	
+	public int size()
+	{
+		return menuItems.size();
+	}
+	
+	public MenuItem get(int i)
+	{
+		return menuItems.get(i);
+	}
 }
