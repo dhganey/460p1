@@ -1,0 +1,10 @@
+package creationalPatterns;
+
+public class RestaurantFactory implements IRestaurant
+{
+	public void createReader();
+	
+	public void createMenuGenerator();
+	
+	public void createMenuFormatter();
+}

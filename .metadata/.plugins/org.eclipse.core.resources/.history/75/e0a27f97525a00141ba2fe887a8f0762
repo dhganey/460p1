@@ -1,0 +1,11 @@
+package creationalPatterns;
+
+public class Restaurant implements IRestaurant
+{
+	private Menu menu;
+	
+	public Restaurant()
+	{
+		//no implementation in parent class
+	}
+}

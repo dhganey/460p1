@@ -1,0 +1,11 @@
+package creationalPatterns;
+
+public class RestaurantFactory
+{
+	private int[][][] typeArray = new int[2][3][3];
+	
+	public static Restaurant createRestaurant(Country c, Format f, RestaurantType t)
+	{
+		
+	}
+}

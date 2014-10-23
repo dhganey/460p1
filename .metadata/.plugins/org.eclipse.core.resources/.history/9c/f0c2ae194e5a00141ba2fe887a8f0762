@@ -1,0 +1,14 @@
+package creationalPatterns;
+import java.util.Scanner;
+
+/**
+ * Driver class. Requests user input, then triggers menu generation
+ * @author David Ganey
+ */
+public class Main implements Definitions extends JApplet
+{
+	public static void main(String[] args)
+	{
+		
+	}
+}

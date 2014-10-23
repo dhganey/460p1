@@ -1,0 +1,10 @@
+package creationalPatterns;
+
+public abstract class IRestaurant
+{
+	void createReader();
+	
+	void createMenuGenerator();
+	
+	void createMenuFormatter();
+}

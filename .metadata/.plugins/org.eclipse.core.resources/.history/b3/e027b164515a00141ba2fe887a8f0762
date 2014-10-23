@@ -1,0 +1,114 @@
+package creationalPatterns;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class InputPanel extends JPanel
+{
+	private ButtonGroup countryButtons;
+	private JRadioButton GBButton;
+	private JRadioButton USAButton;
+	
+	private ButtonGroup outputButtons;
+	private JRadioButton XMLButton;
+	private JRadioButton HTMLButton;
+	private JRadioButton TXTButton;
+	
+	private ButtonGroup typeButtons;
+	private JRadioButton dinerButton;
+	private JRadioButton allDayButton;
+	private JRadioButton eveningOnlyButton;
+	
+	private JButton submitButton;
+	
+	
+	private Country country;
+	private Format format;
+	private RestaurantType restaurantType;
+	
+	public InputPanel()
+	{
+		GBButton.setText("Great Britain");
+		USAButton.setText("United States");
+		XMLButton.setText("XML");
+		HTMLButton.setText("HTML");
+		TXTButton.setText("TXT");
+		dinerButton.setText("Diner");
+		allDayButton.setText("All Day");
+		eveningOnlyButton.setText("Evening Only");
+		
+		countryButtons.add(GBButton);
+		countryButtons.add(USAButton);
+		
+		outputButtons.add(XMLButton);
+		outputButtons.add(HTMLButton);
+		outputButtons.add(TXTButton);
+		
+		typeButtons.add(dinerButton);
+		typeButtons.add(allDayButton);
+		typeButtons.add(eveningOnlyButton);
+		
+		ButtonListener listener = new ButtonListener();
+		submitButton.addActionListener(listener);
+		
+		this.add(GBButton);
+		this.add(USAButton);
+		this.add(XMLButton);
+		this.add(HTMLButton);
+		this.add(TXTButton);
+		this.add(dinerButton);
+		this.add(allDayButton);
+		this.add(eveningOnlyButton);
+		this.add(submitButton);
+	}
+	
+	private class ButtonListener implements ActionListener
+	{
+		public void actionPerformed(ActionEvent e)
+		{
+			Country country;
+			Format format;
+			RestaurantType type;
+			
+			if (GBButton.isSelected())
+			{
+				country = Country.GB;
+			}
+			else
+			{
+				country = Country.USA;
+			}
+			
+			if (XMLButton.isSelected())
+			{
+				format = Format.XML;
+			}
+			else if (HTMLButton.isSelected())
+			{
+				format = Format.HTML;
+			}
+			else
+			{
+				format = Format.TXT;
+			}
+			
+			if (dinerButton.isSelected())
+			{
+				type = RestaurantType.DINER;
+			}
+			else if (allDayButton.isSelected())
+			{
+				type = RestaurantType.ALL_DAY;
+			}
+			else
+			{
+				type = RestaurantType.EVENING_ONLY;
+			}
+			
+			
+		}
+		
+	}
+}

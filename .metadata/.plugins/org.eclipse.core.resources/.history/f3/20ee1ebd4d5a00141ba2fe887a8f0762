@@ -1,0 +1,6 @@
+package creationalPatterns;
+
+public abstract class IReader
+{
+	public abstract FileReader getReader(Country c);
+}

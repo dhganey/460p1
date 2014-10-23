@@ -1,0 +1,70 @@
+package creationalPatterns;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class InputPanel extends JPanel
+{
+	private ButtonGroup countryButtons;
+	private JRadioButton GBButton;
+	private JRadioButton USAButton;
+	
+	private ButtonGroup outputButtons;
+	private JRadioButton XMLButton;
+	private JRadioButton HTMLButton;
+	private JRadioButton TXTButton;
+	
+	private ButtonGroup typeButtons;
+	private JRadioButton dinerButton;
+	private JRadioButton allDayButton;
+	private JRadioButton eveningOnlyButton;
+	
+	private JButton submitButton;
+	
+	public InputPanel()
+	{
+		GBButton.setText("Great Britain");
+		USAButton.setText("United States");
+		XMLButton.setText("XML");
+		HTMLButton.setText("HTML");
+		TXTButton.setText("TXT");
+		dinerButton.setText("Diner");
+		allDayButton.setText("All Day");
+		eveningOnlyButton.setText("Evening Only");
+		
+		countryButtons.add(GBButton);
+		countryButtons.add(USAButton);
+		
+		outputButtons.add(XMLButton);
+		outputButtons.add(HTMLButton);
+		outputButtons.add(TXTButton);
+		
+		typeButtons.add(dinerButton);
+		typeButtons.add(allDayButton);
+		typeButtons.add(eveningOnlyButton);
+		
+		ButtonListener listener = new ButtonListener();
+		submitButton.addActionListener(listener);
+		
+		this.add(GBButton);
+		this.add(USAButton);
+		this.add(XMLButton);
+		this.add(HTMLButton);
+		this.add(TXTButton);
+		this.add(dinerButton);
+		this.add(allDayButton);
+		this.add(eveningOnlyButton);
+		this.add(submitButton);
+	}
+	
+	private class ButtonListener implements ActionListener
+	{
+		public void actionPerformed(ActionEvent e)
+		{
+			
+		}
+		
+	}
+}

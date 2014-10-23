@@ -1,0 +1,13 @@
+package creationalPatterns;
+
+public class RestaurantFactory
+{
+	private Restaurant[][][] typeArray = new Restaurant[2][3][3];
+	
+	public static Restaurant createRestaurant(Country c, Format f, RestaurantType t)
+	{
+		typeArray[0][1][0] = GBXMLDinerRestaurant;
+
+		GBXMLDinerRestaurant.class()
+	}
+}

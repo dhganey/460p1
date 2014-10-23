@@ -1,0 +1,15 @@
+package creationalPatterns;
+
+public class RestaurantFactory
+{
+	private static Class[][][] typeArray = new Class[2][3][3];
+	
+	public static Restaurant createRestaurant(Country c, Format f, RestaurantType t)
+	{
+		typeArray[0][1][0] = GBXMLDinerRestaurant.class;
+		//put the remainder here
+		
+		//now, return the appropriate one
+		Restaurant test = new GBXMLDinerRestaurant();
+	}
+}

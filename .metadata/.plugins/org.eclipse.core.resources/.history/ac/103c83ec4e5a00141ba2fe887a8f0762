@@ -1,0 +1,34 @@
+package creationalPatterns;
+
+import javax.swing.*;
+
+public class InputPanel extends JPanel
+{
+	private ButtonGroup countryButtons;
+	private JRadioButton GBButton;
+	private JRadioButton USAButton;
+	
+	private ButtonGroup outputButtons;
+	private JRadioButton XMLButton;
+	private JRadioButton HTMLButton;
+	private JRadioButton TXTButton;
+	
+	private ButtonGroup menuTypeButtons;
+	private JRadioButton dinerButton;
+	private JRadioButton allDayButton;
+	private JRadioButton eveningOnlyButton;
+	
+	public InputPanel()
+	{
+		countryButtons.add(GBButton);
+		countryButtons.add(USAButton);
+		
+		outputButtons.add(XMLButton);
+		outputButtons.add(HTMLButton);
+		outputButtons.add(TXTButton);
+		
+		menuTypeButtons.add(dinerButton);
+		menuTypeButtons.add(allDayButton);
+		menuTypeButtons.add(eveningOnlyButton);
+	}
+}

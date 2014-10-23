@@ -1,0 +1,34 @@
+package creationalPatterns;
+
+public class RestaurantFactory
+{
+	private static String[][][] typeArray = new String[2][3][3];
+	
+	public static Restaurant createRestaurant(Country c, Format f, RestaurantType t)
+	{
+		typeArray[0][0][0] = "GBHTMLDinerRestaurant";
+		typeArray[0][0][1] = "GBHTMLEveningOnlyRestaurant";
+		typeArray[0][0][2] = "GBHTMLAllDayRestaurant";
+		typeArray[0][1][0] = "GBXMLDinerRestaurant";
+		typeArray[0][1][1] = "GBXMLEveningOnlyRestaurant";
+		typeArray[0][1][2] = "GBXMLAllDayRestaurant";
+		typeArray[0][2][0] = "GBTXTDinerRestaurant";
+		typeArray[0][2][1] = "GBTXTAllDayRestaurant";
+		typeArray[0][2][2] = "GBTXTEveningOnlyRestaurant";
+
+		typeArray[1][0][0] = "GBHTMLDinerRestaurant";
+		typeArray[1][0][1] = "GBHTMLEveningOnlyRestaurant";
+		typeArray[1][0][2] = "GBHTMLAllDayRestaurant";
+		typeArray[1][1][0] = "GBXMLDinerRestaurant";
+		typeArray[1][1][1] = "GBXMLEveningOnlyRestaurant";
+		typeArray[1][1][2] = "GBXMLAllDayRestaurant";
+		typeArray[1][2][0] = "GBTXTDinerRestaurant";
+		typeArray[1][2][1] = "GBTXTAllDayRestaurant";
+		typeArray[1][2][2] = "GBTXTEveningOnlyRestaurant";
+
+
+		
+		//now, return the appropriate one
+		Restaurant test = new GBXMLDinerRestaurant();
+	}
+}

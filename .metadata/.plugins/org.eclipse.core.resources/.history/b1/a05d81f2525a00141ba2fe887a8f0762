@@ -1,0 +1,9 @@
+package creationalPatterns;
+
+public class RestaurantFactory
+{
+	public static Restaurant createRestaurant(Country c, Format f, RestaurantType t)
+	{
+		
+	}
+}
