@@ -59,16 +59,15 @@ public class HTMLMenuFormatter extends MenuFormatter implements Definitions
 				
 				//print a menu item
 				writer.write("        <LI>\n");
-				writer.write("        " + cur.getName() + "\t\t<BR>\n");
-				writer.write("        <I>" + cur.getDescription() + "</I>\n");
-				writer.write("        <BR>" + (cur.getCountry() == Country.GB ? "GBP" : "USD") + cur.getPrice() + "\n");
-				writer.write("        </LI>\n");
+				writer.write("        " + cur.getDescription() + "\n\n");
+				writer.write(cur.getName() + (cur.getCountry() == Country.GB ? "GBP" : "USD") + cur.getPrice() + "\n");
+				writer.write(cur.getDescription() + "\n\n");
 				
 				int nextIndex = i+1;
 				if (nextIndex >= menuItems.size() ||				  //if we're at the end OR
 					menuItems.get(nextIndex).getCategory() != curCat) //if we're about to transition to a new category
 				{
-					writer.write("    </UL>\n");
+					writer.write("    </FoodItemCategory>\n");
 				}
 			}
 		}

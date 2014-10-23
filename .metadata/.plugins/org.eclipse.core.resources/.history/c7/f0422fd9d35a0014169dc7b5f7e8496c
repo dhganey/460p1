@@ -68,7 +68,7 @@ public class HTMLMenuFormatter extends MenuFormatter implements Definitions
 				if (nextIndex >= menuItems.size() ||				  //if we're at the end OR
 					menuItems.get(nextIndex).getCategory() != curCat) //if we're about to transition to a new category
 				{
-					writer.write("    </UL>\n");
+					writer.write("    </FoodItemCategory>\n");
 				}
 			}
 		}
