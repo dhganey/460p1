@@ -1,0 +1,9 @@
+package creationalPatterns;
+
+public class TXTMenuFormatter extends MenuFormatter implements Definitions
+{
+	public String format(Menu m)
+	{
+		
+	}
+}
