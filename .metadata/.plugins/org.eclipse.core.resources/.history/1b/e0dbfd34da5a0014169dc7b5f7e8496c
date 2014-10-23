@@ -1,0 +1,11 @@
+package creationalPatterns;
+
+public enum RestaurantType
+{
+	DINER, EVENING_ONLY, ALL_DAY;
+	
+	//http://stackoverflow.com/questions/9662170/java-override-valueof-and-tostring-in-enum
+	private String value;
+	
+	
+}

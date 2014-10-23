@@ -13,7 +13,7 @@ public class RestaurantFactory
 		try
 		{
 			//get the class name and instantiate it
-			String className = "creationalPatterns." + c.toString() + f.toString() + t.toString() + "Restaurant"; //append package name
+			String className = "creationalPatterns." + c.toString() + .f.toString() + t.toString() + "Restaurant"; //append package name
 			Class<?> classType = Class.forName(className);
 			Constructor<?> constructor = classType.getConstructor();
 			Object instance = constructor.newInstance();

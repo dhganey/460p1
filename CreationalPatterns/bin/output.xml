@@ -1,4 +1,56 @@
 <MenuItems>
+    <FoodItemCategory category="Breakfast">
+        <MenuItem>
+            <Name>Traditional English Breakfast</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>10.95</Amount>
+            </Price>
+            <Description>The breakfast of champions.  2 Fried eggs, 1 English pork sausage, 1 Back Bacon, 2 pieces of black pudding, baked beans, and 1 slice of fried bread.  Served with Brown Sauce</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Irish Breakfast</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>10.95</Amount>
+            </Price>
+            <Description>The Irish version of the English breakfast.  2 Fried eggs, 1 Irish pork sausage, 1 rasher, 1 piece of black pudding, 1 piece of white pudding, baked beans, and Irish soda bread.</Description>
+        </MenuItem>
+    </FoodItemCategory>
+    <FoodItemCategory category="Snack">
+        <MenuItem>
+            <Name>Prawn Cocktail Flavoured Crisps</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>1.95</Amount>
+            </Price>
+            <Description>The classic exotic crisp flavour.</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Cheese and Onion Flavoured Crisps</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>1.95</Amount>
+            </Price>
+            <Description>Mum's favourite.</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Chip Butty</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>2.55</Amount>
+            </Price>
+            <Description>A soft white roll, slathered with butter and filled with Chips fresh out of the fryer</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Cracklin</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>1.95</Amount>
+            </Price>
+            <Description>Salted and roasted pork fat and skin.</Description>
+        </MenuItem>
+    </FoodItemCategory>
     <FoodItemCategory category="Appetizer">
         <MenuItem>
             <Name>Sausage Roll</Name>
@@ -33,54 +85,22 @@
             <Description>Large hard-boiled eggs pickled in vinegar and assorted spices.  These onions bite back</Description>
         </MenuItem>
     </FoodItemCategory>
-    <FoodItemCategory category="Dinner">
+    <FoodItemCategory category="Lunch">
         <MenuItem>
-            <Name>Steak and Kidney Pie</Name>
+            <Name>Ploughman’s Salad</Name>
             <Price>
                 <CurrencyCode>GBP</CurrencyCode>
-                <Amount>15.95</Amount>
+                <Amount>10.95</Amount>
             </Price>
-            <Description>Tender cubes of steak, with tender lamb kidney is succulent rich gravy.  Served with a side of mashed potatoes and peas.</Description>
-        </MenuItem>
-        <MenuItem>
-            <Name>Toad in the Hole</Name>
-            <Price>
-                <CurrencyCode>GBP</CurrencyCode>
-                <Amount>13.95</Amount>
-            </Price>
-            <Description>Plump British Pork sausages backed in a light batter.  Served with mixed vegetables and a brown onion gravy.</Description>
+            <Description>Pork Pie, Pickled Onions, Pickled relish Stilton and Cheddar cheeses and crusty French bread.</Description>
         </MenuItem>
         <MenuItem>
             <Name>Fish and Chips</Name>
             <Price>
                 <CurrencyCode>GBP</CurrencyCode>
-                <Amount>14.95</Amount>
+                <Amount>10.95</Amount>
             </Price>
-            <Description>A large piece of Cod in a covered in a light crisp batter, recipe is a family secret, with a side of Chips and Mushy Peas.  Scraps available by request at no  extra charge.</Description>
-        </MenuItem>
-        <MenuItem>
-            <Name>Lancashire Hotpot</Name>
-            <Price>
-                <CurrencyCode>GBP</CurrencyCode>
-                <Amount>16.95</Amount>
-            </Price>
-            <Description>The famous English Lamb and Mutton stew. Tender succulent pieces of Lamb and Mutton topped with sliced potatoes, slow roasted in the oven.</Description>
-        </MenuItem>
-        <MenuItem>
-            <Name>Faggots</Name>
-            <Price>
-                <CurrencyCode>GBP</CurrencyCode>
-                <Amount>14.95</Amount>
-            </Price>
-            <Description>Succulent meatballs made from ground pig's heart, livers and pork belly.  Served with a brown gravy mashed potatoes and peas</Description>
-        </MenuItem>
-        <MenuItem>
-            <Name>Chicken Tikka Masala</Name>
-            <Price>
-                <CurrencyCode>GBP</CurrencyCode>
-                <Amount>13.95</Amount>
-            </Price>
-            <Description>Britain new national dish.  Chunks of roasted chicken in a mildly spicy Masala sauce.  Served with Basmati rice</Description>
+            <Description>A smaller portion of our Dinner version</Description>
         </MenuItem>
     </FoodItemCategory>
     <FoodItemCategory category="Dessert">
@@ -107,24 +127,6 @@
                 <Amount>11.95</Amount>
             </Price>
             <Description>Strawberry Jam rolled up in a suet pudding.  Served  with Custard</Description>
-        </MenuItem>
-    </FoodItemCategory>
-    <FoodItemCategory category="Side">
-        <MenuItem>
-            <Name>Mashed Potatoes</Name>
-            <Price>
-                <CurrencyCode>GBP</CurrencyCode>
-                <Amount>1.0</Amount>
-            </Price>
-            <Description>Hand Mashed potatoes</Description>
-        </MenuItem>
-        <MenuItem>
-            <Name>Swede</Name>
-            <Price>
-                <CurrencyCode>GBP</CurrencyCode>
-                <Amount>1.0</Amount>
-            </Price>
-            <Description>Hand Mashed Swede</Description>
         </MenuItem>
     </FoodItemCategory>
 </MenuItems>
