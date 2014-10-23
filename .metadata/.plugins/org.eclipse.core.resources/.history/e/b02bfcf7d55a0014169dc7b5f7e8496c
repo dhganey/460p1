@@ -30,8 +30,8 @@ public class RestaurantFactory
 		typeArray[1][1][1] = "USAXMLEveningOnlyRestaurant";
 		typeArray[1][1][2] = "USAXMLAllDayRestaurant";
 		typeArray[1][2][0] = "USATXTDinerRestaurant";
-		typeArray[1][2][1] = "USATXTEveingOnlyRestaurant";
-		typeArray[1][2][2] = "USATXTAllDayRestaurant";
+		typeArray[1][2][1] = "USATXTAllDayRestaurant";
+		typeArray[1][2][2] = "USATXTEveningOnlyRestaurant";
 		
 		//now, return the appropriate one
 		//inspired by http://stackoverflow.com/questions/9886266/is-there-a-way-to-instantiate-a-class-by-name-in-java

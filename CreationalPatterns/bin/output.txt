@@ -1,54 +1,55 @@
 Menu
 
-BREAKFAST
-
-Biscuits and Gravy					USD10.95
-This is a hearty breakfast favorite. Biscuits served with hot sausage gravy 
-
-The All American Breakfast					USD9.95
-Two fried eggs, Sausage (patty or link), crispy bacon, pancakes and maple syrup 
-
-SNACK
-
-Pork Rinds					USD1.95
-Salted and roasted pork fat and skin.
-
-Bacon Wrapped Hot Dog					USD4.95
-Take one hot dog, wrap it in bacon and cook until the bacon is nice and crisp.  Then place it in the bun.
-
-Grilled Cheese and Ham					USD4.95
-Sliced ham, American cheese between two slices of White bread buttered on the outside and then fried.
-
 APPETIZER
 
-Glazed Doughnut					USD0.95
-Deep fried pastry covered in sugar glaze.
+Sausage Roll					GBP6.95
+English sausage meat wrapped in a flakey pastry. Served with Brown Sauce
 
-Jelly Doughnut					USD0.95
-Deep fried pastry covered in sugar, and filled with strawberry jelly.
+Scotch Egg					GBP6.95
+A hard-boiled egg, wrapped in pork sausage meat.  Covered in breadcrumbs and deep-fried.  Served cold with a side of picked relish.
 
-Hushpuppies					USD4.95
-Cornbread dough deep fired served with a variety of dipping sauces.
+Pickled Onions					GBP2.75
+Golf ball sized onions pickled in vinegar and assorted spices.  These onions bite back
 
-LUNCH
+Pickled Eggs					GBP2.75
+Large hard-boiled eggs pickled in vinegar and assorted spices.  These onions bite back
 
-Hamburger					USD11.95
-Despite the name, ground beef cooked over a charcoal grill with a side of French Fries.
+DINNER
 
-Cheeseburger					USD12.95
-Same as the Hamburger with a side of cheddar cheese added.
+Steak and Kidney Pie					GBP15.95
+Tender cubes of steak, with tender lamb kidney is succulent rich gravy.  Served with a side of mashed potatoes and peas.
 
-Meatloaf and Mashed Potatoes					USD18.95
-Meatloaf, Mashed Potatoes, Brown gravy and Broccoli.
+Toad in the Hole					GBP13.95
+Plump British Pork sausages backed in a light batter.  Served with mixed vegetables and a brown onion gravy.
 
-Jambalaya					USD14.95
-Creole style Jambalaya, with chicken, andouille sausage, tomatoes, onions, crawfish and rice.  Good enough to have you Fais-do-do-ing
+Fish and Chips					GBP14.95
+A large piece of Cod in a covered in a light crisp batter, recipe is a family secret, with a side of Chips and Mushy Peas.  Scraps available by request at no  extra charge.
+
+Lancashire Hotpot					GBP16.95
+The famous English Lamb and Mutton stew. Tender succulent pieces of Lamb and Mutton topped with sliced potatoes, slow roasted in the oven.
+
+Faggots					GBP14.95
+Succulent meatballs made from ground pig's heart, livers and pork belly.  Served with a brown gravy mashed potatoes and peas
+
+Chicken Tikka Masala					GBP13.95
+Britain new national dish.  Chunks of roasted chicken in a mildly spicy Masala sauce.  Served with Basmati rice
 
 DESSERT
 
-Pazooki					USD7.95
-A large 6 inch round chocolate chip cookie, served warm with 3 large scoops of vanilla ice cream.
+Spotted Dick					GBP11.95
+The Classic Desert.  Steamed suet pudding with currents covered in custard
 
-Banana Split					USD7.95
-One banana cut lengthwise served with scoops of vanilla, chocolate and strawberry ice cream and topped with Pineapple, chocolate and strawberry syrup.
+Eton Mess					GBP11.95
+Favourite of the old Boys.  A mixture of strawberries, pieces of meringue and cream.  Old school tie not included!
+
+Jam Roly-Poly					GBP11.95
+Strawberry Jam rolled up in a suet pudding.  Served  with Custard
+
+SIDE
+
+Mashed Potatoes					GBP1.0
+Hand Mashed potatoes
+
+Swede					GBP1.0
+Hand Mashed Swede
 

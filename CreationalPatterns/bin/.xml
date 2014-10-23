@@ -1,4 +1,56 @@
 <MenuItems>
+    <FoodItemCategory category="Breakfast">
+        <MenuItem>
+            <Name>Traditional English Breakfast</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>10.95</Amount>
+            </Price>
+            <Description>The breakfast of champions.  2 Fried eggs, 1 English pork sausage, 1 Back Bacon, 2 pieces of black pudding, baked beans, and 1 slice of fried bread.  Served with Brown Sauce</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Irish Breakfast</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>10.95</Amount>
+            </Price>
+            <Description>The Irish version of the English breakfast.  2 Fried eggs, 1 Irish pork sausage, 1 rasher, 1 piece of black pudding, 1 piece of white pudding, baked beans, and Irish soda bread.</Description>
+        </MenuItem>
+    </FoodItemCategory>
+    <FoodItemCategory category="Snack">
+        <MenuItem>
+            <Name>Prawn Cocktail Flavoured Crisps</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>1.95</Amount>
+            </Price>
+            <Description>The classic exotic crisp flavour.</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Cheese and Onion Flavoured Crisps</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>1.95</Amount>
+            </Price>
+            <Description>Mum's favourite.</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Chip Butty</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>2.55</Amount>
+            </Price>
+            <Description>A soft white roll, slathered with butter and filled with Chips fresh out of the fryer</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Cracklin</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>1.95</Amount>
+            </Price>
+            <Description>Salted and roasted pork fat and skin.</Description>
+        </MenuItem>
+    </FoodItemCategory>
     <FoodItemCategory category="Appetizer">
         <MenuItem>
             <Name>Sausage Roll</Name>
@@ -31,6 +83,24 @@
                 <Amount>2.75</Amount>
             </Price>
             <Description>Large hard-boiled eggs pickled in vinegar and assorted spices.  These onions bite back</Description>
+        </MenuItem>
+    </FoodItemCategory>
+    <FoodItemCategory category="Lunch">
+        <MenuItem>
+            <Name>Ploughman’s Salad</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>10.95</Amount>
+            </Price>
+            <Description>Pork Pie, Pickled Onions, Pickled relish Stilton and Cheddar cheeses and crusty French bread.</Description>
+        </MenuItem>
+        <MenuItem>
+            <Name>Fish and Chips</Name>
+            <Price>
+                <CurrencyCode>GBP</CurrencyCode>
+                <Amount>10.95</Amount>
+            </Price>
+            <Description>A smaller portion of our Dinner version</Description>
         </MenuItem>
     </FoodItemCategory>
     <FoodItemCategory category="Dinner">
