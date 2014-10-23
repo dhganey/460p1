@@ -1,6 +1,0 @@
-package creationalPatterns;
-
-public class InputPanel extends JPanel
-{
-	private 
-}

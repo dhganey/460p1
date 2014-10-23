@@ -1,8 +1,0 @@
-package creationalPatterns;
-
-import javax.swing.*;
-
-public class InputPanel extends JPanel
-{
-	private JRadioButton name;
-}
